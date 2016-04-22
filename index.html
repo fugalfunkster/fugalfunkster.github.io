@@ -1,0 +1,86 @@
+<doctype! html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+
+<div class="gallery">
+  <h1 class="L">Matthew Hoselton's Code Samples</h1>
+  <h1 class="R">
+    <a href="mailto:mtthwhsltn@gmail.com">Contact Me</a>
+  </h1>
+  <a href="https://www.freecodecamp.com/fugalfunkster">
+     <img class="social R" src="https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAUPAAAAJGE1YjJkN2RiLThjZWYtNGI2NC04NWE3LWUxNDgyNzVlMmEyZg.png"/>
+  </a>
+  <a href="https://github.com/fugalfunkster">
+    <img class="social R" src="https://wasin.io/wp-content/uploads/2015/05/showimage.png"/>
+  </a>
+  <a href="https://www.codeschool.com/users/1693294">
+    <img class="social R" src="http://bel-tib-lib.org/sites/default/files/wysiwyg/codeSchool.png"/>
+  </a>
+  
+</div>
+
+<div class="gallery frontend">
+  <a href="http://codepen.io/fugalfunkster/full/jbgvMa/">
+    <img class="L codeThumb" src="http://s19.postimg.org/dnqt9kuir/tictac.png" />
+  </a>
+  <div class="gallery text">
+    <h2>Unbeatable Tic-Tac-Toe Game</h2>
+    <p>This project was the first time I implemented a grown-up algorithm: MiniMax, a venerable, game-theory classic. Before making a move, the computer recursively calculates all possible moves, and ranks them based on their outcome. With that data,
+      the computer simply selects the best move based on that move's possible outcomes. I made my program more performant by generating a random move whenever the computer plays first.</p>
+  </div>
+</div>
+<div class="gallery">
+  <img class="L codeThumb" src="http://s19.postimg.org/n5qk9mg77/backendcode.png" />
+  <div class="gallery text">
+    <h2> Node / Express / MongoDB Apps & APIs </h2>
+    <p>My first back-end projects include a handful of microservices and apps. My microservices include a url-shortening service and an image-search api (using Google's Custom Search JSON/Atom API).</p>
+    <p>My full stack apps include a voting app, a nightlife app - using the yelp API, and a stock-symbol tracker that utilizes socket.io for real time updates across clients. 
+    <p>For back-end code samples, please <a href="https://github.com/fugalfunkster"/>check out my git repos</a>.</p>
+  </div>
+</div>
+<div class="gallery">
+  <a href="http://codepen.io/fugalfunkster/full/gPgxeP/">
+    <img class="R codeThumb d3" src="http://s19.postimg.org/xtub8gq6b/meteormap.png" />
+ </a>
+  <div class="gallery text">
+    <h2>Meteorite Strikes on a Pierce Projection</h2>
+    <p>For my last D3 project with FreeCodeCamp, I had to plot meteorites across the glode. But a simple Mercator projection would not do, oh no, I wanted to be non-conformist. So I used the Pierce quincuncial projection, a conformal projection that doesn't
+      exagerate scale as badly as the (better known) Mercator projection. The Pierce projection's distortion occurs mostly in areas of open ocean, better preserving the shape of the continents. Also, it just looks <em>cool</em>.</p>
+  </div>
+</div>
+<div class="gallery">
+  <a href="http://codepen.io/fugalfunkster/full/gPgMeE/">
+    <img class="R codeThumb d3" src="http://s19.postimg.org/lhreuz2bn/usetheforce.png" />
+  </a>
+  <div class="gallery text">
+    <h2>Force Directed Network Graph</h2>
+    <p>FreeCodeCamp's camper news is a posting board where campers can link to code-related news and miscellany. My network chart shows relationships between campers and their posts.</p>
+    <p>This map was my first time using the force. Force direction gives life to charts by dictating repulsive and attractive forces between nodes. When users move nodes, the other nodes respond, preserving a clean presentation.</p>
+  </div>
+</div>
+<div class="gallery frontend">
+  <a href="http://codepen.io/fugalfunkster/full/GpYJaX/">
+    <img class="L codeThumb" src="http://s19.postimg.org/rb1gvjdz7/closurecalc.png" />
+  </a>
+  <div class="gallery text">
+    <h2> Calculator with Closures </h2>
+    <p>Though it may not look like much, this calculator helped me explore closures. Closures are dead simple: Functions have acess to their parent's scope. But closures get interesting in JS, because functions are first-class, so you can invoke a function
+      outside of it's lexical context. Because that function still has access to it's parent's scope, it is said to have enclosed that scope. Pretty handy when you want to curry a function and reheat it later for leftovers...</p>
+  </div>
+</div>
+<div class="gallery frontend">
+  <a href="http://codepen.io/fugalfunkster/full/vNPoaa/">
+    <img class="L codeThumb" src="http://s15.postimg.org/llbekd523/simon.png" />
+  </a>
+  <div class="gallery text">
+    <h2>Simon's Event Loop</h2>
+    <p>Though I now loathe the infernal beeping, this Simon game was good practice at evented programming.</p>
+    <p>To keep it interesting, I implemented a basic event loop and used a custom event emitter and listener, to handle user input and computer output in an orderly fashion.</p>
+  </div>
+</div>
+<div>
+</html>

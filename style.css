@@ -1,0 +1,50 @@
+h1 {
+  margin: 25px 50px 25px 50px;
+  font-size: 2em;
+  font-family: 'Sorts Mill Goudy', serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  padding: 0 30px 15px 40px;
+}
+
+.social  {
+  margin: 25px 10px 25px 10px;
+  height: 50px;
+  width: 50px
+}
+
+.gallery {
+  clear: both;
+  overflow: hidden;
+  margin: 5px auto;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  max-width: 1200px;
+}
+
+.codeThumb {
+  border: solid blue 5px;
+  margin: 25px;
+  border-radius: 5px;
+}
+
+.text {
+  display: inline;
+  font-size: 1.4em;
+  font-family: 'Sorts Mill Goudy', serif;
+}
+
+.R {
+  float: right;
+}
+
+.L {
+  float: left;
+}
+
+
