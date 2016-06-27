@@ -14,8 +14,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  transition: height 1000000s ease;
-  -webkit-transition: height 1000000s ease;
 }
 
 .nav {
