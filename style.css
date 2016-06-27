@@ -1,3 +1,34 @@
+body {
+  background-color: black;
+}
+
+span {
+  margin: 2.5%;
+}
+
+h1, h2 {
+  display: inline;
+  font-family: 'Sorts Mill Goudy', serif;
+  color: dark-gray;
+}
+
+p {
+  font-family: 'Arvo', serif;
+}
+
+.banner {
+  font-size: x-large;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.billboard {
+  color: white;
+  font-size: x-large;
+  margin: 10%;
+}
 h1 {
   margin: 25px 50px 25px 50px;
   font-size: 2em;
