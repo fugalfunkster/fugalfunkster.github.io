@@ -14,7 +14,7 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .nav {
@@ -62,9 +62,4 @@ h1, h2 {
 
 .blue {
   color: #72A1E5;
-}
-
--webkit-scrollbar {
-    width: 8px;
-    background-color: black;
 }
