@@ -9,12 +9,12 @@ body {
 }
 
 .landing {
-  height: 100%;
+
   background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .66) 50%, rgba(0, 0, 0, .33)), url('./images/IMG_2070.jpg'), no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .nav {
@@ -39,7 +39,7 @@ h1, h2 {
 .pitch {
   padding: 5% 0 0 10%; 
   color: white;
-  font-size: 4.2vmin;
+  font-size: 4.7vmin;
   font-family: 'Arvo', serif;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
 }
