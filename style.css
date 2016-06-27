@@ -1,81 +1,64 @@
 body {
   background-color: black;
+margin: 0;
 }
 
-span {
-  margin: 2.5%;
+.section {
+  height: 100%;
+  width: 100%;
 }
+
+.landing {
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .66) 50%, rgba(0, 0, 0, .33)), url('./images/IMG_2070.jpg'), no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.nav {
+  margin: auto;
+  padding: 2%;
+  display: inline-block;
+}
+
 
 h1, h2 {
   display: inline;
   font-family: 'Sorts Mill Goudy', serif;
-  color: dark-gray;
-}
-
-p {
-  font-family: 'Arvo', serif;
+  color: white;
 }
 
 .banner {
-  font-size: x-large;
-  background-color: gray;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.billboard {
-  color: white;
-  font-size: x-large;
-  margin: 10%;
-}
-h1 {
-  margin: 25px 50px 25px 50px;
-  font-size: 2em;
-  font-family: 'Sorts Mill Goudy', serif;
-}
-
-h2 {
+  font-size: 1.5%vw;
+  padding: 4%;
   text-align: center;
 }
 
-p {
-  padding: 0 30px 15px 40px;
+.pitch {
+  padding: 5% 0 0 10%; 
+  color: white;
+  font-size: 4.2vmin;
+  font-family: 'Arvo', serif;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
 }
 
-.social  {
-  margin: 25px 10px 25px 10px;
-  height: 50px;
-  width: 50px
+.yellowish {
+  color: #D6CE93;
 }
 
-.gallery {
-  clear: both;
-  overflow: hidden;
-  margin: 5px auto;
-  background-color: rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
-  max-width: 1200px;
+.purple {
+  color: #957186;
 }
 
-.codeThumb {
-  border: solid blue 5px;
-  margin: 25px;
-  border-radius: 5px;
+.orange {
+  color: #FF7E6B;
 }
 
-.text {
-  display: inline;
-  font-size: 1.4em;
-  font-family: 'Sorts Mill Goudy', serif;
+.blueish {
+  color: #83BCA9;
 }
 
-.R {
-  float: right;
+.blue {
+  color: #72A1E5;
 }
-
-.L {
-  float: left;
-}
-
-
