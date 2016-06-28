@@ -22,6 +22,9 @@ body {
   display: inline-block;
 }
 
+.name {
+  font-size: 3vmin;
+}
 
 h1, h2 {
   display: inline;
@@ -30,16 +33,24 @@ h1, h2 {
 }
 
 .banner {
-  font-size: 1.5%vw;
   padding: 4%;
   text-align: center;
+}
+
+.links {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 10%;
+  font-size: 2vmin;
 }
 
 .pitch {
   padding: 5% 0 0 10%; 
   color: white;
   font-size: 4.7vmin;
-  font-family: 'Arvo', serif;
+  font-family: 'Inconsolata', serif;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
 }
 
@@ -61,4 +72,18 @@ h1, h2 {
 
 .blue {
   color: #72A1E5;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,1); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.8); 
 }
