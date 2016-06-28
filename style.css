@@ -47,11 +47,15 @@ h1, h2 {
   font-size: 2.5vw;
 }
 
+.billboard {
+  height: auto;
+}
+
 .pitch {
   padding: 10%;
   color: white;
-  font-size: 6vw;
-  font-family: 'Inconsolata', serif;
+  font-size: 5vw;
+  font-family: 'Courier', serif;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
 }
 
@@ -96,5 +100,27 @@ img {
 
 .section.contact {
   height: 20%;
-  background-color: gray;
+  background-color: black;
+}
+
+.codeThumb {
+  max-height: 27vmax;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+.gallery {
+  height: auto;
+  text-align: center; 
+}
+
+.gallery p {
+  color: white;
+  font-family: 'Courier', serif;
+  font-size: 2.25vmax;
+}
+
+.gallery div {
+  display: inline-block;
+  margin: 2% auto 3% auto;
 }
