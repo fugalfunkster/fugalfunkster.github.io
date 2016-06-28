@@ -17,13 +17,13 @@ body {
 }
 
 .nav {
-  margin: auto;
   padding: 4%;
+  margin: auto;
   display: inline-block;
 }
 
 .name {
-  font-size: 3.5vmax;
+  font-size: 3.5vw;
 }
 
 h1, h2 {
@@ -43,7 +43,7 @@ h1, h2 {
   left: 0;
   width: 100%;
   padding-bottom: 6%;
-  font-size: 2.25vmax;
+  font-size: 2.25vw;
 }
 
 .pitch {
