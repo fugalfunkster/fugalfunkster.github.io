@@ -9,7 +9,7 @@ body {
 }
 
 .landing {
-  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .66) 50%, rgba(0, 0, 0, .33)), url('./images/IMG_2070.jpg'), no-repeat top left scroll;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .66) 50%, rgba(0, 0, 0, .33)), url('./images/persimmon.jpg'), no-repeat top left scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -87,4 +87,14 @@ h1, h2 {
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.8); 
+}
+
+img {
+  height: 80%;
+  padding: 2%;
+}
+
+.section.contact {
+  height: 20%;
+  background-color: gray;
 }
