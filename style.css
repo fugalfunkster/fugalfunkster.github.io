@@ -18,12 +18,12 @@ body {
 
 .nav {
   margin: auto;
-  padding: 2%;
+  padding: 4%;
   display: inline-block;
 }
 
 .name {
-  font-size: 3vmin;
+  font-size: 4vmin;
 }
 
 h1, h2 {
@@ -43,7 +43,7 @@ h1, h2 {
   left: 0;
   width: 100%;
   padding-bottom: 10%;
-  font-size: 2vmin;
+  font-size: 2.5vmin;
 }
 
 .pitch {
