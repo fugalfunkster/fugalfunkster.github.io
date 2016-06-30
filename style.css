@@ -1,6 +1,12 @@
+/*  Portfolio Styles  */
+
 body {
   background-color: black;
   margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
 }
 
 .section {
@@ -8,23 +14,7 @@ body {
   width: 100%;
 }
 
-.landing {
-  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .66) 50%, rgba(0, 0, 0, .33)), url('./images/persimmon.jpg'), no-repeat top left scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.nav {
-  padding: 4%;
-  margin: auto;
-  display: inline-block;
-}
-
-.name {
-  font-size: 4.5vw;
-}
+/*  Fonts & Colors  */
 
 h1, h2 {
   display: inline;
@@ -33,30 +23,8 @@ h1, h2 {
   font-weight: normal;
 }
 
-.banner {
-  padding: 4%;
-  text-align: center;
-}
-
-.links {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding-bottom: 6%;
-  font-size: 2.5vw;
-}
-
-.billboard {
-  height: auto;
-}
-
-.pitch {
-  padding: 10%;
-  color: white;
-  font-size: 5vw;
-  font-family: 'Courier', serif;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+a {
+  text-decoration: none;
 }
 
 .yellowish {
@@ -79,39 +47,70 @@ h1, h2 {
   color: #72A1E5;
 }
 
-::-webkit-scrollbar {
-    width: 12px;
-}
- 
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,1); 
-    border-radius: 10px;
-}
- 
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.8); 
+/*  Hexes, etc.  */
+
+.hexes {
+  margin: 25% auto 10% auto;
+  font-size: 3vmax;
 }
 
-img {
-  height: 80%;
-  padding: 2%;
+.hex {
+  display: inline-block;
+  margin: auto;
+  height: 12vmax
 }
 
-.section.contact {
-  height: 20%;
-  background-color: black;
+/*  SECTION I: Landing  */
+
+.landing {
+  background: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, .5
+) 50%, rgba(0, 0, 0, .2)), url('./images/persimmon.jpg'), no-repeat top left scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  font-size: 4.5vw;
+  padding: 4%;
 }
 
-.codeThumb {
-  max-height: 27vmax;
-  padding: 5%;
-  margin-bottom: 5%;
+.nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 6%;
+  font-size: 2.5vw;
+  margin: auto;
+  display: inline-block;
 }
+
+.nav > a {
+  padding: 4%;
+  display: inline-block;
+}
+
+/*  SECTION II: The Pitch  */
+
+
+.billboard {
+  height: auto;
+  text-align: center; 
+}
+
+.pitch {
+  padding: 10%;
+  color: white;
+  font-size: 5vw;
+  font-family: 'Courier', serif;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+  text-align: left;
+}
+
+/*  SECTION III: Portfolio  */
 
 .gallery {
   height: auto;
-  text-align: center; 
 }
 
 .gallery p {
@@ -122,5 +121,67 @@ img {
 
 .gallery div {
   display: inline-block;
-  margin: 2% auto 3% auto;
+  margin: 2% auto;
+  text-align: center;
+}
+
+.codeThumb {
+  max-height: 27vmax;
+  padding: 20%;
+  margin-bottom: 5%;
+}
+
+/*  SECTION IV: Pedagogy  */
+
+.pedagogy {
+  height: auto;
+  text-align: center; 
+}
+
+.pedagogy p {
+  margin: 3% 15%;
+  color: white;
+  font-size: 4vw;
+  font-family: 'Courier', serif;
+  text-align: left;
+}
+
+
+.pedagogy.span.hexes {
+  text-align: vertical;
+}
+
+.icon {
+  max-height: 75px;
+}
+
+
+/* SECTION V: Contact  */
+
+.logo {
+  text-align: center;
+  margin: auto;
+  height: 19vmax;
+}
+
+.contact {
+  height: auto;
+  background-color: black;
+  color: white;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 3vmax;
+  display: block;
+  vertical-align: middle;
+  margin: 0 auto 15% auto;
+  text-align: center;
+  
+}
+
+.contact h3 {
+  display: inline;
+  margin: 5%;
+}
+
+.contact:last-child {
+  padding-bottom: 15%;
 }
