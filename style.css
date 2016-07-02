@@ -174,12 +174,16 @@ a {
   display: block;
   vertical-align: middle;
   margin: 0 auto 15% auto;
-  text-align: center;
-  
+  text-align: center; 
+}
+
+.contact.info {
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .contact h3 {
   display: inline;
-  margin: 5%;
+  color: white;
 }
-
