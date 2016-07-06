@@ -109,31 +109,34 @@ a {
 
 /*  SECTION III: Portfolio  */
 
-.gallery {
+.portfolio {
   height: auto;
   text-align: center;
 }
 
-.gallery p {
-  color: white;
-  font-family: 'Courier', serif;
-  font-size: 3.25vw;
+.portfolio.hexes {
+   max-width: 400px;
 }
 
-.gallery div {
-  display: inline-block;
-  text-align: center;
+.gallery {  
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .pair {
-  width: 100%;
+  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  flex-basis: 900px;
 }
 
-.codeBox {
-  margin: 5%;
+.pair p {
+  color: white;
+  font-family: 'Courier', serif;
+  font-size: xx-large;
 }
+
 
 
 /*  SECTION IV: Pedagogy  */
