@@ -50,7 +50,8 @@ a {
 /*  Hexes, etc.  */
 
 .hexes {
-  margin: 25% auto 10% auto;
+  width: 500px;
+  margin: 15% auto 10% auto;
   font-size: 3vmax;
 }
 
@@ -71,7 +72,6 @@ a {
   background-size: cover;
   text-align: center;
   font-size: 4.5vw;
-
 }
 
 .nav {
@@ -111,25 +111,30 @@ a {
 
 .gallery {
   height: auto;
+  text-align: center;
 }
 
 .gallery p {
   color: white;
   font-family: 'Courier', serif;
-  font-size: 2.25vmax;
+  font-size: 3.25vw;
 }
 
 .gallery div {
   display: inline-block;
-  margin: 2% auto;
   text-align: center;
 }
 
-.codeThumb {
-  max-height: 27vmax;
-  padding: 20%;
-  margin-bottom: 5%;
+.pair {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
+
+.codeBox {
+  margin: 5%;
+}
+
 
 /*  SECTION IV: Pedagogy  */
 
@@ -144,11 +149,6 @@ a {
   font-size: 4vw;
   font-family: 'Courier', serif;
   text-align: left;
-}
-
-
-.pedagogy.span.hexes {
-  text-align: vertical;
 }
 
 .icon {
@@ -173,15 +173,16 @@ a {
   display: block;
   vertical-align: middle;
   margin: 0 auto 15% auto;
-  text-align: center;
-  
+  text-align: center; 
+}
+
+.contact.info {
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .contact h3 {
   display: inline;
-  margin: 5%;
-}
-
-.contact:last-child {
-  padding-bottom: 15%;
+  color: white;
 }
