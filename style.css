@@ -141,12 +141,12 @@ a {
 
 /*  SECTION IV: Pedagogy  */
 
-.pedagogy {
+.notes {
   height: auto;
   text-align: center; 
 }
 
-.pedagogy p {
+.notes p {
   margin: 3% 15%;
   color: white;
   font-size: 4vw;
