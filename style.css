@@ -52,7 +52,7 @@ a {
 .hexes {
   display: inline-block;
   width: 500px;
-  margin: 15% auto 10% auto;
+  margin: 4% auto 4% auto;
   font-size: 2.4em;
   text-align: center;
 }
@@ -82,12 +82,22 @@ a {
 .nav {
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  left: 10%;
+  width: 80%;
   padding-bottom: 6%;
-  font-size: 1.6em;
+  font-size: 2em;
   margin: auto;
   display: inline-block;
+}
+
+@media screen and (min-width: 38em) {
+   
+  /* smaller links for bigger screens */
+
+  .nav {
+    font-size: 1.6em;
+  }
+
 }
 
 .nav > a {
@@ -116,7 +126,7 @@ a {
 }
 
 .pitch {
-  padding: 10%;
+  padding: 6%;
   color: white;
   font-size: 5vw;
   font-family: 'Courier', serif;
