@@ -16,7 +16,7 @@ body {
 
 /*  Fonts & Colors  */
 
-h1, h2 {
+.sc {
   display: inline;
   font-family: 'Sorts Mill Goudy', serif;
   color: white;
@@ -71,7 +71,11 @@ a {
   -o-background-size: cover;
   background-size: cover;
   text-align: center;
-  font-size: 4.5vw;
+}
+
+.name {
+  padding: 4%;
+  font-size: 4em;
 }
 
 .nav {
@@ -80,14 +84,26 @@ a {
   left: 0;
   width: 100%;
   padding-bottom: 6%;
-  font-size: 2.5vw;
+  font-size: 1.6em;
   margin: auto;
   display: inline-block;
 }
 
 .nav > a {
-  padding: 4%;
   display: inline-block;
+  position: relative;
+  margin: 4%;
+  padding-bottom: 1px;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute; 
+  bottom: 1px;
+  left: 10%;
+  height: .8px;
+  width: 80%;
+  background: white;
 }
 
 /*  SECTION II: The Pitch  */
@@ -185,7 +201,28 @@ a {
   text-align: left;
 }
 
-.contact h3 {
-  display: inline;
+.info > span {
+  font-size: 1.25em;
+}
+
+.info a {
+  display: inline-block;
+  position: relative;
+  margin: 4%;
+  padding-bottom: 1px;
   color: white;
+}
+
+.info a::after {
+  content: "";
+  position: absolute; 
+  bottom: 1px;
+  left: 10%;
+  height: .8px;
+  width: 80%;
+  background: white;
+}
+
+.sc > span {
+  font-size: 150%;  
 }
