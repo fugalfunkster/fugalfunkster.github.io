@@ -53,7 +53,7 @@ a {
   display: inline-block;
   width: 500px;
   margin: 15% auto 10% auto;
-  font-size: 2em;
+  font-size: 2.4em;
   text-align: center;
 }
 
@@ -180,7 +180,7 @@ a {
 
 .logo {
   margin: 10% auto;
-  height: 19vmax;
+  height: 6.5em;
 }
 
 .contact {
@@ -195,17 +195,14 @@ a {
 }
 
 .info {
-  display: block;
   width: 60%;
   margin: 0 auto;
-  font-size: 2.4vmax;
-  text-align: center;
+  font-size: 2.5em;
 }
 
 
 .info a {
   position: relative;
-  margin: 4%;
   padding-bottom: 1px;
   color: white;
 }
@@ -218,6 +215,11 @@ a {
   height: .8px;
   width: 80%;
   background: white;
+
+}
+
+.info span {
+  padding-top: 8%;
 }
 
 .sc > span {
