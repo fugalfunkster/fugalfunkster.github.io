@@ -52,7 +52,7 @@ a {
 .hexes {
   display: inline-block;
   width: 500px;
-  margin: 4% auto 4% auto;
+  margin: 8% auto;
   font-size: 2.4em;
   text-align: center;
 }
@@ -85,7 +85,7 @@ a {
   left: 10%;
   width: 80%;
   padding-bottom: 6%;
-  font-size: 2em;
+  font-size: 3.75em;
   margin: auto;
   display: inline-block;
 }
@@ -128,10 +128,27 @@ a {
 .pitch {
   padding: 6%;
   color: white;
-  font-size: 5vw;
+  font-size: 3.25em;
   font-family: 'Courier', serif;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
   text-align: left;
+}
+
+.pitch a {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 6px;
+  color: #FF7E6B;
+}
+
+.pitch a::after {
+  content: "";
+  position: absolute; 
+  bottom: -4px;
+  left: 10%;
+  height: 2.4px;
+  width: 80%;
+  background: #FF7E6B;
 }
 
 /*  SECTION III: Portfolio  */
@@ -142,7 +159,7 @@ a {
 }
 
 .portfolio.hexes {
-   max-width: 400px;
+   max-width: 350px;
 }
 
 .gallery {  
@@ -161,7 +178,7 @@ a {
 .pair p {
   color: white;
   font-family: 'Courier', serif;
-  font-size: xx-large;
+  font-size: 2em;
 }
 
 
@@ -176,13 +193,15 @@ a {
 .notes p {
   margin: 3% 15%;
   color: white;
-  font-size: 1.4em;
+  font-size: 3.25em;
   font-family: 'Courier', serif;
   text-align: left;
 }
 
 .icon {
-  max-height: 75px;
+  max-height: 6em;
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
 
 
@@ -207,9 +226,23 @@ a {
 .info {
   width: 60%;
   margin: 0 auto;
-  font-size: 2.5em;
+  font-size: 3em;
 }
 
+@media screen and (min-width: 38em) {
+
+  .logo {
+    height: 12em;
+  }
+   
+  /* smaller links for bigger screens */
+
+  .info {
+    font-size: 1.6em;
+  }
+
+
+}
 
 .info a {
   position: relative;
