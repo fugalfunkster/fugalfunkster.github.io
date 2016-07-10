@@ -85,19 +85,9 @@ a {
   left: 10%;
   width: 80%;
   padding-bottom: 6%;
-  font-size: 3.75em;
+  font-size: 1.8em;
   margin: auto;
   display: inline-block;
-}
-
-@media screen and (min-width: 38em) {
-   
-  /* smaller links for bigger screens */
-
-  .nav {
-    font-size: 1.6em;
-  }
-
 }
 
 .nav > a {
@@ -128,7 +118,7 @@ a {
 .pitch {
   padding: 6%;
   color: white;
-  font-size: 3.25em;
+  font-size: 2em;
   font-family: 'Courier', serif;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
   text-align: left;
@@ -170,6 +160,7 @@ a {
 .pair {
   margin: 0 auto;
   display: flex;
+  font-size: 2em;
   flex-wrap: wrap;
   justify-content: space-around;
   flex-basis: 900px;
@@ -178,7 +169,6 @@ a {
 .pair p {
   color: white;
   font-family: 'Courier', serif;
-  font-size: 2em;
 }
 
 
@@ -193,7 +183,7 @@ a {
 .notes p {
   margin: 3% 15%;
   color: white;
-  font-size: 3.25em;
+  font-size: 2em;
   font-family: 'Courier', serif;
   text-align: left;
 }
@@ -209,7 +199,7 @@ a {
 
 .logo {
   margin: 10% auto;
-  height: 6.5em;
+  height: 8em;
 }
 
 .contact {
@@ -226,23 +216,9 @@ a {
 .info {
   width: 60%;
   margin: 0 auto;
-  font-size: 3em;
+  font-size: 2em;
 }
 
-@media screen and (min-width: 38em) {
-
-  .logo {
-    height: 12em;
-  }
-   
-  /* smaller links for bigger screens */
-
-  .info {
-    font-size: 1.6em;
-  }
-
-
-}
 
 .info a {
   position: relative;
