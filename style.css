@@ -3,6 +3,7 @@
 body {
   background-color: black;
   margin: 0;
+  font-size: 1.25em;
 }
 
 ::-webkit-scrollbar {
@@ -21,6 +22,10 @@ body {
   font-family: 'Sorts Mill Goudy', serif;
   color: white;
   font-weight: normal;
+}
+
+.sc > span {
+  font-size: 150%;  
 }
 
 a {
@@ -53,7 +58,7 @@ a {
   display: inline-block;
   width: 500px;
   margin: 8% auto;
-  font-size: 2.4em;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -75,7 +80,7 @@ a {
 }
 
 .name {
-  padding: 4%;
+  padding: 1em;
   font-size: 4em;
 }
 
@@ -85,9 +90,21 @@ a {
   left: 10%;
   width: 80%;
   padding-bottom: 6%;
-  font-size: 1.8em;
   margin: auto;
   display: inline-block;
+  font-size: 2.25em;
+}
+
+@media (min-width: 47em) {
+
+  .name {
+    font-size: 3em;
+  }
+
+  .nav {
+    font-size: 1.6em;
+  }
+
 }
 
 .nav > a {
@@ -160,17 +177,28 @@ a {
 .pair {
   margin: 0 auto;
   display: flex;
-  font-size: 2em;
+  font-size: 1.6em;
   flex-wrap: wrap;
   justify-content: space-around;
   flex-basis: 900px;
 }
 
 .pair p {
+  padding-bottom: 6px;
+  position: relative;
   color: white;
   font-family: 'Courier', serif;
 }
 
+.pair p::after {
+  content: "";
+  position: absolute; 
+  bottom: -4px;
+  left: 10%;
+  height: 2.4px;
+  width: 80%;
+  background: white;
+}
 
 
 /*  SECTION IV: Pedagogy  */
@@ -241,6 +269,12 @@ a {
   padding-top: 8%;
 }
 
-.sc > span {
-  font-size: 150%;  
+.portrait {
+  height: 8em;
+  float: left;
+  padding-right: 6%;
+}
+
+.photo p {
+  overflow: hidden;
 }
