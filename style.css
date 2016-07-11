@@ -18,10 +18,6 @@ body {
   background-color: black;
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-}
-
 .section {
   height: 100%;
   width: 100%;
@@ -68,7 +64,6 @@ a {
 
 .hexes {
   display: inline-block;
-  width: 500px;
   margin: 8% auto;
   font-size: 2em;
   text-align: center;
@@ -76,7 +71,7 @@ a {
 
 .hex {
   margin: auto;
-  height: 2em;
+  height: 1em;
 }
 
 /*  SECTION I: Landing  */
@@ -87,7 +82,8 @@ a {
 
 .name {
   padding: 1em;
-  font-size: 3em;
+  font-size: 2em;
+
 }
 
 .nav {
@@ -153,40 +149,39 @@ a {
   text-align: center;
 }
 
-.portfolio.hexes {
-   max-width: 350px;
-}
-
 .gallery {  
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.pair {
-  margin: 0 auto;
-  display: flex;
-  font-size: 1em;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  flex-basis: 900px;
+.codeBox {
+  margin: 4%;
 }
 
-.pair p {
-  padding-bottom: 12px;
-  position: relative;
+.codeBox p {
+  padding-bottom: 2%;
   color: white;
   font-family: 'Courier', serif;
 }
 
-.pair p::after {
-  content: "";
-  position: absolute; 
-  bottom: -6px;
-  left: 10%;
-  height: 2.4px;
-  width: 80%;
-  background: white;
-  margin-bottom: 15px;
+.codeBox img {
+  border: 2px solid white;
+  width: 12em;
+}
+
+@media screen and (min-width: 32em) {
+  .gallery {
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .codeBox img {
+    width: 16em;
+  }
 }
 
 
@@ -198,26 +193,21 @@ a {
 }
 
 .notes p {
-  margin: 3% 5%;
+  margin: 3% 10%;
   color: white;
-  font-size: 2em;
   font-family: 'Courier', serif;
   text-align: left;
 }
 
 @media screen and (min-width: 38em) {
-
   .notes p {
     margin: 3% 25%;
-    font-size: 1em;
   }
-
 }
 
 .icon {
-  max-height: 6em;
-  padding-top: 6%;
-  padding-bottom: 6%;
+  max-height: 4em;
+  padding: 6%;
 }
 
 /*  SECTION IV: About Me  */
@@ -229,9 +219,9 @@ a {
 }
 
 .pitch {
-  margin: 3% 5%;
+  margin: 3% 10%;
   color: white;
-  font-size: 2em;
+  font-size: 1em;
   font-family: 'Courier', serif;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
   text-align: left;
@@ -254,7 +244,7 @@ a {
 .pitch a::after {
   content: "";
   position: absolute; 
-  bottom: -4px;
+  bottom: -1px;
   left: 10%;
   height: 2.4px;
   width: 80%;
@@ -275,7 +265,7 @@ a {
   color: white;
   font-family: 'Sorts Mill Goudy', serif;
   display: block;
-  vertical-align: middle;
+s  vertical-align: middle;
   margin: 0 auto 15% auto;
   text-align: center;
 }
@@ -283,7 +273,7 @@ a {
 .info {
   width: 60%;
   margin: 0 auto;
-  font-size: 2em;
+  font-size: 1.25em;
 }
 
 
@@ -298,13 +288,13 @@ a {
   position: absolute; 
   bottom: 1px;
   left: 10%;
-  height: .8px;
+  height: .7px;
   width: 80%;
   background: white;
 
 }
 
-.info span {
+.info > p {
   padding-top: 8%;
 }
 
