@@ -198,7 +198,7 @@ a {
 }
 
 .pair p {
-  padding-bottom: 6px;
+  padding-bottom: 12px;
   position: relative;
   color: white;
   font-family: 'Courier', serif;
@@ -207,11 +207,12 @@ a {
 .pair p::after {
   content: "";
   position: absolute; 
-  bottom: -4px;
+  bottom: -6px;
   left: 10%;
   height: 2.4px;
   width: 80%;
   background: white;
+  margin-bottom: 15px;
 }
 
 
@@ -286,8 +287,9 @@ a {
 .portrait {
   height: 8em;
   float: left;
-  padding-right: 6%;
-  padding-bottom: 4%;
+  margin-right: 6%;
+  margin-bottom: 4%;
+  border: 2px solid white;
 }
 
 .photo p {
