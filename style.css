@@ -84,12 +84,6 @@ a {
 /*  SECTION I: Landing  */
 
 .landing {
-  background: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, .5
-) 50%, rgba(0, 0, 0, .2)), url('./images/persimmon.jpg'), no-repeat top left scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   text-align: center;
 }
 
@@ -109,16 +103,32 @@ a {
   font-size: 2.25em;
 }
 
-@media (min-width: 47em) {
+@media screen and (max-width: 47em) {
+  .landing{
+    background: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, .5
+) 50%, rgba(0, 0, 0, .2)), url('./images/persimmon.jpg'), no-repeat top left scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
 
+@media screen and (min-width: 47em) {
+  .landing {
+    background: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, .5
+) 50%, rgba(0, 0, 0, .2)), url('./images/persimmon.jpg'), no-repeat top left scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
   .name {
-    font-size: 3em;
+    font-size: 2.5em;
   }
-
   .nav {
-    font-size: 1.6em;
+    font-size: 1.25em;
   }
-
 }
 
 .nav > a {
@@ -138,41 +148,7 @@ a {
   background: white;
 }
 
-/*  SECTION II: The Pitch  */
-
-
-.billboard {
-  height: auto;
-  text-align: center; 
-}
-
-.pitch {
-  padding: 6%;
-  color: white;
-  font-size: 2em;
-  font-family: 'Courier', serif;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
-  text-align: left;
-}
-
-.pitch a {
-  display: inline-block;
-  position: relative;
-  padding-bottom: 6px;
-  color: #FF7E6B;
-}
-
-.pitch a::after {
-  content: "";
-  position: absolute; 
-  bottom: -4px;
-  left: 10%;
-  height: 2.4px;
-  width: 80%;
-  background: #FF7E6B;
-}
-
-/*  SECTION III: Portfolio  */
+/*  SECTION II: Portfolio  */
 
 .portfolio {
   height: auto;
@@ -216,7 +192,7 @@ a {
 }
 
 
-/*  SECTION IV: Pedagogy  */
+/*  SECTION III: Notes  */
 
 .notes {
   height: auto;
@@ -231,10 +207,60 @@ a {
   text-align: left;
 }
 
+@media screen and (min-width: 37.5em) {
+
+  .notes p {
+    margin: 3% 25%;
+    font-size: 1em;
+  }
+
+}
+
 .icon {
   max-height: 6em;
   padding-top: 6%;
   padding-bottom: 6%;
+}
+
+/*  SECTION IV: About Me  */
+
+
+.billboard {
+  height: auto;
+  text-align: center; 
+}
+
+.pitch {
+  margin: 3% 15%;
+  color: white;
+  font-size: 2em;
+  font-family: 'Courier', serif;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+  text-align: left;
+}
+
+@media screen and (min-width: 47em) {
+  .pitch {
+    margin: 0 25%;
+    font-size: 1em;
+  }
+}
+
+.pitch a {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 6px;
+  color: #FF7E6B;
+}
+
+.pitch a::after {
+  content: "";
+  position: absolute; 
+  bottom: -4px;
+  left: 10%;
+  height: 2.4px;
+  width: 80%;
+  background: #FF7E6B;
 }
 
 
