@@ -4,7 +4,6 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -15,7 +14,7 @@ html, body {
 }
 
 body {
-  background-color: black;
+  background-color: white;
 }
 
 .section {
@@ -28,7 +27,6 @@ body {
 .sc {
   display: inline;
   font-family: 'Sorts Mill Goudy', serif;
-  color: white;
   font-weight: normal;
 }
 
@@ -82,8 +80,8 @@ a {
 
 .name {
   padding: 1em;
-  font-size: 2em;
-
+  font-size: 4vw;
+  color: white;
 }
 
 .nav {
@@ -94,13 +92,14 @@ a {
   padding-bottom: 6%;
   margin: auto;
   display: inline-block;
-  font-size: 1em;
+  font-size: 1.6vw;
+  color: white;
 }
 
 @media screen and (max-width: 38em) {
   .landing{
-    background: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, .5
-) 50%, rgba(0, 0, 0, .2)), url('./images/persimmon.jpg'), no-repeat top left scroll;
+    background: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .25
+) 50%, rgba(0, 0, 0, .0)), url('./images/persimmon.jpg'), no-repeat top left scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -110,18 +109,18 @@ a {
 
 @media screen and (min-width: 38em) {
   .landing {
-    background: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, .5
-) 50%, rgba(0, 0, 0, .2)), url('./images/persimmon.jpg'), no-repeat top left scroll;
+    background: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .25
+) 50%, rgba(0, 0, 0, .0)), url('./images/persimmon.jpg'), no-repeat top left scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
   .name {
-    font-size: 2.5em;
+    font-size: 5vw;
   }
   .nav {
-    font-size: 1.25em;
+    font-size: 2vw;
   }
 }
 
@@ -130,6 +129,7 @@ a {
   position: relative;
   margin: 4%;
   padding-bottom: 1px;
+  color: white;
 }
 
 .nav a::after {
@@ -149,6 +149,13 @@ a {
   text-align: center;
 }
 
+.tools {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
 .gallery {  
   display: flex;
   flex-direction: column;
@@ -160,12 +167,12 @@ a {
 
 .codeBox p {
   padding-bottom: 2%;
-  color: white;
+  color: black;
   font-family: 'Courier', serif;
 }
 
 .codeBox img {
-  border: 2px solid white;
+  border: 2px solid black;
   width: 12em;
 }
 
@@ -194,7 +201,7 @@ a {
 
 .notes p {
   margin: 3% 10%;
-  color: white;
+  color: black;
   font-family: 'Courier', serif;
   text-align: left;
 }
@@ -220,10 +227,9 @@ a {
 
 .pitch {
   margin: 3% 10%;
-  color: white;
+  color: black;
   font-size: 1em;
   font-family: 'Courier', serif;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
   text-align: left;
 }
 
@@ -261,8 +267,7 @@ a {
 
 .contact {
   height: auto;
-  background-color: black;
-  color: white;
+  color: black;
   font-family: 'Sorts Mill Goudy', serif;
   display: block;
 s  vertical-align: middle;
@@ -280,7 +285,7 @@ s  vertical-align: middle;
 .info a {
   position: relative;
   padding-bottom: 1px;
-  color: white;
+  color: black;
 }
 
 .info a::after {
@@ -303,7 +308,7 @@ s  vertical-align: middle;
   float: left;
   margin-right: 6%;
   margin-bottom: 4%;
-  border: 2px solid white;
+  border: 2px solid black;
 }
 
 .photo p {
