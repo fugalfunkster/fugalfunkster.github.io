@@ -38,25 +38,6 @@ a {
   text-decoration: none;
 }
 
-.yellowish {
-  color: #D6CE93;
-}
-
-.purple {
-  color: #957186;
-}
-
-.orange {
-  color: #FF7E6B;
-}
-
-.blueish {
-  color: #83BCA9;
-}
-
-.blue {
-  color: #72A1E5;
-}
 
 /*  Hexes, etc.  */
 
@@ -98,8 +79,7 @@ a {
 
 @media screen and (max-width: 38em) {
   .landing{
-    background: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .25
-) 50%, rgba(0, 0, 0, .0)), url('./images/persimmon.jpg'), no-repeat top left scroll;
+    background: url('./images/persimmon.jpg'), no-repeat top left scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -109,8 +89,8 @@ a {
 
 @media screen and (min-width: 38em) {
   .landing {
-    background: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .25
-) 50%, rgba(0, 0, 0, .0)), url('./images/persimmon.jpg'), no-repeat top left scroll;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .25
+) 20%, rgba(0, 0, 0, .0)), url('./images/persimmon.jpg'), no-repeat top left scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -149,35 +129,15 @@ a {
   text-align: center;
 }
 
-.tools {
-  display: flex;
-  width: 50%;
-  margin: 0 auto;
-  justify-content: space-around;
-}
-
-.gallery {  
+.accordion-parent {
+  margin: 3% 10%;
   display: flex;
   flex-direction: column;
 }
 
-.codeBox {
-  margin: 4%;
-}
-
-.codeBox p {
-  padding-bottom: 2%;
-  color: black;
-  font-family: 'Courier', serif;
-}
-
-.codeBox img {
-  border: 2px solid black;
-  width: 12em;
-}
 
 @media screen and (min-width: 32em) {
-  .gallery {
+  .accordion-parent {
     margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
@@ -185,8 +145,47 @@ a {
   }
 }
 
+.accordion-parent label{
+  font-family: 'Courier', serif;
+  padding: 5px 20px;
+  position: relative;
+  z-index: 20;
+  display: block;
+}
+
+.accordion-parent input:checked + label,
+.accordion-parent input:checked + label:hover {
+  background: #c6e1ec;
+  color: #3d7489;
+}
+
+.accordion-parent input{
+  display: none;
+}
+
+.accordion-parent article{
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  z-index: 10;
+}
+
+.accordion-parent article div{
+  padding: 1em;
+}
+
+.accordion-parent input:checked ~ article {
+  height: auto;
+}
+
+.codeThumb {
+  border: 2px solid black;
+  width: 12em;
+}
+
 @media screen and (min-width: 48em) {
-  .codeBox img {
+  .codeThumb {
     width: 16em;
   }
 }
@@ -226,37 +225,39 @@ a {
 }
 
 .pitch {
-  margin: 3% 10%;
-  color: black;
+  margin: 0% 10%;
+}
+
+@media screen and (min-width: 38em) {
+  .pitch {
+    margin: 0% 25%;
+  }
+}
+.pitch p {
+  margin: 3% 0%;
   font-size: 1em;
+  color: black;
   font-family: 'Courier', serif;
   text-align: left;
 }
 
 @media screen and (min-width: 38em) {
-  .pitch {
-    margin: 0 25%;
-    font-size: 1em;
+  .pitch p {
+    margin: 3% 0%;
   }
 }
 
-.pitch a {
-  display: inline-block;
-  position: relative;
-  padding-bottom: 6px;
-  color: #FF7E6B;
+.portrait {
+  height: 10em;
+  float: left;
+  margin-right: 6%;
+  margin-bottom: 4%;
+  border: 2px solid black;
 }
 
-.pitch a::after {
-  content: "";
-  position: absolute; 
-  bottom: -1px;
-  left: 10%;
-  height: 2.4px;
-  width: 80%;
-  background: #FF7E6B;
+.photo p {
+  overflow: hidden;
 }
-
 
 /* SECTION V: Contact  */
 
@@ -303,14 +304,3 @@ s  vertical-align: middle;
   padding-top: 8%;
 }
 
-.portrait {
-  height: 8em;
-  float: left;
-  margin-right: 6%;
-  margin-bottom: 4%;
-  border: 2px solid black;
-}
-
-.photo p {
-  overflow: hidden;
-}
