@@ -107,7 +107,7 @@ d3.json("https://gist.githubusercontent.com/fugalfunkster/f00ff42bc134d5ac647acc
     .size([width, height])
     .nodes(d3.values(nodes))
     .links(edges)
-    .linkDistance((width/5))
+    .linkDistance((height/5))
     .charge((width/1000)* -600);
 
   force.on("tick", function(){
