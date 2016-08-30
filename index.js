@@ -1,4 +1,4 @@
-var height = window.innerWidth * 0.8, width = window.innerHeight * 0.8;
+var width = window.innerWidth * 0.8, height = window.innerHeight * 0.75;
 
 ////////////////////////////
 // IMPORT AND FORMAT DATA //
@@ -107,8 +107,8 @@ d3.json("https://gist.githubusercontent.com/fugalfunkster/f00ff42bc134d5ac647acc
     .size([width, height])
     .nodes(d3.values(nodes))
     .links(edges)
-    .linkDistance(120)
-    .charge(-400);
+    .linkDistance((width/5))
+    .charge((width/1000)* -600);
 
   force.on("tick", function(){
     edgeSelection
@@ -138,7 +138,7 @@ d3.json("https://gist.githubusercontent.com/fugalfunkster/f00ff42bc134d5ac647acc
     .data(force.nodes())
     .enter()
     .append("circle")
-    .attr("r", function(d){ return (1.5 * d.links.length*5)})
+    .attr("r", function(d){ return (3 + ((height / 100) * d.links.length))})
     .attr("class", "node")
     .on("click", function(d){
       if(d.link){
@@ -154,8 +154,8 @@ d3.json("https://gist.githubusercontent.com/fugalfunkster/f00ff42bc134d5ac647acc
       .attr("xlink:href", function(d) {
         return d.pic;
       })
-      .attr("width", 50)
-      .attr("height", 50);
+      .attr("width", width / 10 > 50 ? 50 : width / 10)
+      .attr("height", height / 10 > 50 ? 50 : height / 10);
   
    var links = svg.selectAll(".node")
       .data(force.nodes())
