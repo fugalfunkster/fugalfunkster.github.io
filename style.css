@@ -149,49 +149,33 @@ a {
   text-align: center;
 }
 
-.tools {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  margin: 0 auto;
-  justify-content: space-around;
+#graph {
+  background-color: white;
+  max-width: 750px;
+  margin: 50px auto 0 auto;
 }
 
-.gallery {  
-  display: flex;
-  flex-direction: column;
+circle {
+  fill: black;
+  stroke: gray;
+  stroke-width: 4px
 }
 
-.codeBox {
-  margin: 4%;
+line {
+  stroke: black;
+  stroke-width: 1px;
 }
 
-.codeBox p {
-  padding-bottom: 2%;
+.tooltip {
+  position: absolute;
+  padding: 5px;
+  background-color: white;
   color: black;
-  font-family: 'Courier', serif;
+  pointer-events: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: 'Courier', sans-serif;
 }
-
-.codeBox img {
-  border: 2px solid black;
-  width: 12em;
-}
-
-@media screen and (min-width: 32em) {
-  .gallery {
-    margin: 0 auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-@media screen and (min-width: 48em) {
-  .codeBox img {
-    width: 16em;
-  }
-}
-
 
 /*  SECTION III: Notes  */
 
