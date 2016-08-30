@@ -1,4 +1,4 @@
-var height = 750, width = 750;
+var height = window.innerWidth * 0.8, width = window.innerHeight * 0.8;
 
 ////////////////////////////
 // IMPORT AND FORMAT DATA //
